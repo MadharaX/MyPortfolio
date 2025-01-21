@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --primary-color: #EFEFEF;
+    --secondary-color: #0f1110;
+    --accent-color: #216869;
+    --grayD: #216869d4;
+    --grayM: #21686983;
+    --grayL: #2168693e;
+    --logo-txt: 32px;
+    --heading-txt: 40px;
+    --normal-txt:32px;
+    --btn-txt:24px;
+    
+}
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="headerS1">
+                <p id="logo">Madhara</p>
+                <div id="headerS1P1">
+                    <a href="/about.html" style="color: var(--primary-color); text-decoration: none; font-size: 20px;">About</a>
+                    <a href="" style="color: var(--accent-color); text-decoration: none; font-size: 20px;">Work</a>
+                    <a href="" style="color: var(--primary-color); text-decoration: none; font-size: 20px;">Resume</a>
+                    <a href="/contact.html">
+                        <button id="contactBtn">Contact</button>
+                    </a>
+                    <span id="closeMenu" onclick="toggleMenu()">&#10005;</span>
+                </div>
+            </div>
+            <!-- Hamburger menu button (hidden by default) -->
+            <div id="hamburgerMenu" class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+        <div id="content">
+            <div id="sec1">
+                <p id="welcomeTxt">
+                    Hello, I'm Madhara!<br>
+                    I'm a final-year BSc (Hons) IT Interactive Media student with a passion for UX design.<br>
+                    I'm currently seeking a UI/UX internship to apply my skills and contribute to impactful projects.<br>
+                    Below are some of my work.
+                </p>
+                <div id="moreAboutBtnCon"><button id="moreAboutBtn">More About Me</button></div>
+            </div>
+            <div id="sec2">
+                <div id="button3Con">
+                    <div id="button3">
+                        <button id="uxBtn">UX</button>
+                        <button id="devBtn">Dev</button>
+                        <Button id="tdBtn">3D</Button>
+                    </div>
+                </div>
+                <div id='projects'>
+                    <div id="pro1">
+                        <img src="/images/wp14623638-colorful-4k-desktop-wallpapers.jpg" alt="project1">
+                        <p>Project 1</p>
+                    </div>
+                    <div id="pro2">
+                        <img src="/images/wp14623638-colorful-4k-desktop-wallpapers.jpg" alt="project2">
+                        <p>Project 2</p>
+                    </div>
+                    <div id="pro3">
+                        <img src="/images/wp14623638-colorful-4k-desktop-wallpapers.jpg" alt="project3">
+                        <p>Project 3</p>
+                    </div>
+                </div>
+                <div id="backToTop">
+                    <img src="/images/arrowUp2.svg" alt="uparrow">
+                    <a href="#" id="backToTopLink">Back To Top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-top">
+            <p>Madhara</p>
+            <button>Contact</button>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright © 2025 Mithila Madhara. All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

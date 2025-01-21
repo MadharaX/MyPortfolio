@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhara</title>
+    <link rel="stylesheet" href="/about.css">
+    <style>
+        :root {
+    --primary-color: #EFEFEF;
+    --secondary-color: #0f1110;
+    --accent-color: #216869;
+    --grayD: #216869d4;
+    --grayM: #21686983;
+    --grayL: #2168693e;
+    --logo-txt: 32px;
+    --heading-txt: 40px;
+    --normal-txt:32px;
+    --btn-txt:24px;
+    
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="headerS1">
+            <p id="logo">Madhara</p>
+            <div id="headerS1P1">
+                <a href="/about.html" style="color: var(--accent-color); text-decoration: none; font-size: 20px;">About</a>
+                <a href="/index.html" style="color: var(--primary-color); text-decoration: none; font-size: 20px;">Work</a>
+                <a href="https://drive.google.com/file/d/1-Y58RVWfS3WGL6wEe4XsK4xFFrT7MMBN/view?usp=sharing" style="color: var(--primary-color); text-decoration: none; font-size: 20px;">Resume</a>
+                <a href="/contact.html">
+                    <button id="contactBtn">Contact</button>
+                </a>
+                <span id="closeMenu" onclick="toggleMenu()">&#10005;</span>
+            </div>
+        </div>
+        <!-- Hamburger menu button (hidden by default) -->
+        <div id="hamburgerMenu" class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+    <hr>
+    <div id="content">
+        <div id="aboutMeSec">
+            <div id="myPhoto">
+                <img src="/images/CSGO.jpg" alt="photo">
+            </div>
+            <div id="aboutMeText">
+                <p>Hello, I'm Madhara<br>
+                I’m a 4th-year Interactive Media undergraduate at SLIIT with a focus on learning UI/UX design.<br>
+                I’m also passionate about front-end development, digital marketing, and 3D, and I’m excited to expand my portfolio to include these interests.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="educationSec">
+            <div id="heading1">
+                <h1>Academic Background</h1>
+            </div>
+            <div id="text2">
+                <p>BSc (Hons) in Information Technology (Interactive Media) SLIIT, 4th Year<br>
+                Google UX Design Professional Certificate<br>
+                HubSpot SEO Certification</p>
+            </div>
+        </div>
+        <hr>
+        <div id="skillSec">
+            <div id="heading2">
+                <h1>Skills</h1>
+            </div>
+            <div id="text3">
+                <p>Information Architecture<br>
+                User-Centered Design<br>
+                Wireframing & Prototyping<br>
+                Interaction Design<br>
+                Basic Front-End Development (HTML, CSS, JavaScript)<br>
+                General Knowledge of Digital Marketing</p>
+            </div>
+        </div>
+        <div id="backToTop">
+            <img src="/images/arrowUp2.svg" alt="uparrow">
+            <a href="#" id="backToTopLink">Back To Top</a>
+        </div>
+    </div>
+    <hr>
+    <div id="footer">
+        <div class="footer-top">
+            <p>Madhara</p>
+            <button>Contact</button>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright © 2025 Mithila Madhara. All rights reserved</p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

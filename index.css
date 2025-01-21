@@ -1,0 +1,357 @@
+:root {
+    --primary-color: #EFEFEF;
+    --secondary-color: #0f1110;
+    --accent-color: #216869;
+    --grayD: #216869d4;
+    --grayM: #21686983;
+    --grayL: #2168693e;
+    --logo-txt: 32px;
+    --heading-txt: 40px;
+    --normal-txt: 32px;
+    --btn-txt: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    
+} */
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px; 
+    display: flex;
+    flex-direction: column;
+}
+#wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+    font-family: 'Gill Sans', sans-serif;
+    color: var(--primary-color);
+    font-size: 36px;
+    padding-bottom: 8px;
+    margin-left: 24px;
+}
+
+#contactBtn {
+    background-color: var(--accent-color);
+    font-size: 20px;
+    padding: 16px 36px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+#headerS1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensure parent container is also right-aligned */
+    gap: 64px;
+    width: 100%;
+}
+
+#headerS1P1 {
+    display: flex;
+    gap: 32px;
+    font-size: var(--normal-txt);
+    padding: 0px 36px;
+    align-items: center;
+    justify-content: center; /* Center-align the content */
+    margin-left: auto; /* Ensure it aligns to the right */
+    position: relative;
+}
+
+#headerS1P1 #closeMenu {
+    display: none;
+    font-size: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 10px; /* Adjust margin as needed */
+    align-self: center; /* Center-align the close button */
+}
+
+
+
+/* Hide the menu and hamburger button by default */
+#hamburgerMenu {
+    display: none;
+    font-size: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 24px;
+
+}
+
+#hamburgerMenu .hamburger {
+    display: block;
+}
+
+/* Show the close button when the menu is open */
+#hamburgerMenu.open .hamburger {
+    display: none;
+}
+
+
+
+/* Responsive Design: Changes layout for smaller screens */
+@media screen and (max-width: 768px) 
+{
+    #headerS1P1 {
+        display: none; /* Hides the navigation links */
+    }
+
+    #hamburgerMenu {
+        display: block; /* Shows the hamburger menu */
+    }
+
+    #headerS1 
+    {
+        justify-content: space-between;
+    }
+
+    #headerS1P1.active {
+        display: flex; /* Show navigation links when active */
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        padding: 20px;
+        width: 100%;
+        height: 100vh; /* Cover the whole display height */
+        box-sizing: border-box;
+        align-items: center; /* Center-align the content */
+        justify-content: center; /* Center-align the content vertically */
+    }
+    #headerS1P1.open {
+        display: flex; /* Show navigation links when active */
+        flex-direction: column;
+        gap: 20px;
+        position: fixed; /* Fix the position to cover content */
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+        backdrop-filter: blur(80px);
+        padding: 20px;
+        width: 100%;
+        height: 100vh; /* Cover the whole display height */
+        box-sizing: border-box;
+        align-items: center; /* Center-align the content */
+        justify-content: center; /* Center-align the content vertically */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    #headerS1P1.open #closeMenu {
+        display: block;
+        align-self: center;
+        margin-top: 60px; 
+        margin-bottom: 20px;
+    }
+
+   
+}
+
+/* Content  ------------------------------------------ */
+/* sec1  ------------------------------------------ */
+#content {
+    flex: 1;
+}
+
+#moreAboutBtnCon
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+#moreAboutBtn {
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button3Con
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    gap: 16px;
+}
+
+#button3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Adjust the gap between buttons as needed */
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+    padding: 0; /* Remove padding */
+    margin: 0; 
+}
+
+#uxBtn{
+    background-color: var(--accent-color);
+    padding: 8px 16px 8px 16px;
+    border: none;
+    border-radius: 15px;
+    color: var(--primary-color);
+
+}
+#devBtn{
+    background-color: var(--secondary-color);
+    padding: 8px 16px 8px 16px;
+    border: none;
+    border-radius: 15px;
+    color: var(--primary-color);
+}
+
+#tdBtn{
+    background-color: var(--secondary-color);
+    padding: 8px 16px 8px 16px;
+    border: none;
+    border-radius: 15px;
+    color: var(--primary-color);
+}
+
+#welcomeTxt {
+    text-align: center;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;     /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    margin-top: 64px;
+    height: auto;           /* Full viewport height */
+    padding: 32px;     /* Keep padding if needed */
+}
+
+/* ------------projects ---------- */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#projects div {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#projects p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+/* backToTop-------------- */
+
+#backToTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#backToTop img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+#backToTop a {
+    font-size: 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#backToTop a:hover {
+    text-decoration: underline;
+}
+
+/* ----------footer------------ */
+
+#footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--primary-color);
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+#footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center; /* Center the text */
+}
+
+#footer .footer-bottom {
+    text-align: center; /* Center the text */
+}
+
+#footer button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#footer button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
