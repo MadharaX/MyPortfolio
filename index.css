@@ -252,6 +252,7 @@ html, body {
 
 #welcomeTxt {
     text-align: center;
+    font-size: 32;
     color: var(--primary-color);
     display: flex;
     align-items: center;     /* Vertically center */
