@@ -41,7 +41,7 @@ body {
     background-color: var(--accent-color);
     font-size: 20px;
     padding: 16px 36px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -190,7 +190,7 @@ body {
     background-color: var(--accent-color);
     font-size: 20px;
     padding: 10px 20px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
