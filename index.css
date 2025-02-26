@@ -32,7 +32,7 @@
     flex-direction: column;
     
 } */
-html, body {
+/* html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--secondary-color);
@@ -43,6 +43,19 @@ html, body {
     margin-bottom: 16px; 
     display: flex;
     flex-direction: column;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
 }
 #wrapper {
     flex: 1;
@@ -54,7 +67,7 @@ html, body {
     color: var(--primary-color);
     font-size: 36px;
     padding-bottom: 8px;
-    margin-left: 24px;
+    /* margin-left: 24px; */
 }
 
 #contactBtn {
@@ -112,7 +125,7 @@ html, body {
     font-size: 30px;
     color: var(--primary-color);
     cursor: pointer;
-    margin-right: 24px;
+    /* margin-right: 24px; */
 
 }
 
@@ -220,14 +233,14 @@ html, body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap; /* Adjust the gap between buttons as needed */
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--grayD);
     border-radius: 16px;
     padding: 0; /* Remove padding */
     margin: 0; 
 }
 
 #uxBtn{
-    background-color: var(--accent-color);
+    background-color: var(--grayD);
     padding: 8px 16px 8px 16px;
     border: none;
     border-radius: 15px;
@@ -343,8 +356,8 @@ html, body {
 }
 
 #footer button {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
