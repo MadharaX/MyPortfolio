@@ -278,9 +278,9 @@ hr {
     font-size: 14px;
 }
 
-#footer button:hover {
+/* #footer button:hover {
     background-color: var(--accent-color);
-}
+} */
 
 /* Responsive Design: Changes layout for smaller screens */
 @media screen and (max-width: 768px) {

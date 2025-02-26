@@ -352,7 +352,7 @@ html, body {
     font-size: 14px;
 }
 
-#footer button:hover {
+/* #footer button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
+} */
