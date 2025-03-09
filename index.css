@@ -286,6 +286,12 @@ body {
     margin-top: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(3, 1fr); /* Limit to 3 columns */
+    }
+}
+
 #projects div {
     background-color: var(--secondary-color);
     padding: 20px;
